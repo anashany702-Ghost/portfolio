@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="icon" href="images/علامه تجاريه .jpeg" type="image/jpeg">
+    <title>Anas's Portfolio</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+
+        <!-- nav-bar -->
+
+        <section class="nav-bar bg-dark d-flex align-items-center p-2 justify-content-around w-100 flex-wrap">
+
+            <div class="logo d-flex">
+                <img src="./images/علامه تجاريه .jpeg" alt="logo" class="logo">
+                <h4 class="p-2 h4 text-white">portfolio</h4>
+            </div>
+
+
+            <button id="menuToggle" class="md:hidden text-2xl p-2">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <ul id="navMenu" class="nav  hidden md:flex flex-row md:flex-row w-full md:w-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white active text-capitalize" href="home.html">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-capitalize" href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-capitalize" href="projects.html">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-capitalize" href="blog.html">blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-capitalize" href="contact.html">contact</a>
+                </li>
+            </ul>
+
+    </div>
+
+    </section>
+
+    <h1 class="soon text-center h1">Coming Soon(Stay tuned!!!!!!)</h1>
+
+
+    </div>
+
+
+
+
+    <script src="./style/bootstrap.bundle.min.js"></script>
+    <script src="./style/all.min.js"></script>
+    <script src="./Java script/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('flex');
+        });
+    </script>
+</body>
+
+</html>
